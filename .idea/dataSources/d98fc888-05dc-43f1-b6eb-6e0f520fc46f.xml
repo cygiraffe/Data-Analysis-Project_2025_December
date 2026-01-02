@@ -1151,6 +1151,9 @@ sys|schema||DA study||grant option|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="classicmodels">
+      <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
+      <LastIntrospectionLevel>3</LastIntrospectionLevel>
+      <LastIntrospectionLocalTimestamp>2026-01-02.02:43:57</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="common_project">
@@ -1207,26 +1210,230 @@ sys|schema||DA study||grant option|G</Grants>
     <schema id="307" parent="1" name="world">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
-    <user id="308" parent="1" name="DA study">
+    <schema id="308" parent="1" name="da_project_no1">
+      <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
+      <LastIntrospectionLevel>3</LastIntrospectionLevel>
+      <LastIntrospectionLocalTimestamp>2026-01-02.03:04:51</LastIntrospectionLocalTimestamp>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="309" parent="1" name="DA study">
       <Plugin>mysql_native_password</Plugin>
     </user>
-    <user id="309" parent="1" name="mysql.infoschema">
+    <user id="310" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="310" parent="1" name="mysql.session">
+    <user id="311" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="311" parent="1" name="mysql.sys">
+    <user id="312" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="312" parent="1" name="root">
+    <user id="313" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <user id="313" parent="1" name="ssafy">
+    <user id="314" parent="1" name="ssafy">
       <Host>localhost</Host>
     </user>
+    <table id="315" parent="308" name="accounts">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="316" parent="308" name="churns">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="317" parent="308" name="subscriptions">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="318" parent="315" name="account_id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="319" parent="315" name="account_name">
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="320" parent="315" name="industry">
+      <Position>3</Position>
+      <StoredType>enum(&apos;Cybersecurity&apos;, &apos;DevTools&apos;, &apos;EdTech&apos;, &apos;FinTech&apos;, &apos;HealthTech&apos;)|0e</StoredType>
+    </column>
+    <column id="321" parent="315" name="country">
+      <Position>4</Position>
+      <StoredType>varchar(10)|0s</StoredType>
+    </column>
+    <column id="322" parent="315" name="signup_date">
+      <Position>5</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="323" parent="315" name="referral_source">
+      <Position>6</Position>
+      <StoredType>enum(&apos;partner&apos;, &apos;ads&apos;, &apos;organic&apos;, &apos;event&apos;, &apos;other&apos;)|0e</StoredType>
+    </column>
+    <column id="324" parent="315" name="plan_tier">
+      <Position>7</Position>
+      <StoredType>enum(&apos;Basic&apos;, &apos;Enterprise&apos;, &apos;Pro&apos;)|0e</StoredType>
+    </column>
+    <column id="325" parent="315" name="seats">
+      <Position>8</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="326" parent="315" name="is_trial">
+      <Position>9</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="327" parent="315" name="churned">
+      <Position>10</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <index id="328" parent="315" name="PRIMARY">
+      <ColNames>account_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="329" parent="315" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="330" parent="316" name="churn_id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="331" parent="316" name="account_id">
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="332" parent="316" name="churn_date">
+      <Position>3</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="333" parent="316" name="reason">
+      <Position>4</Position>
+      <StoredType>enum(&apos;pricing&apos;, &apos;support&apos;, &apos;budget&apos;, &apos;features&apos;, &apos;competitor&apos;, &apos;unknown&apos;)|0e</StoredType>
+    </column>
+    <column id="334" parent="316" name="refund">
+      <Position>5</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
+    </column>
+    <column id="335" parent="316" name="preceding_upgrade">
+      <Position>6</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="336" parent="316" name="preceding_downgrade">
+      <Position>7</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="337" parent="316" name="reactivated">
+      <Position>8</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="338" parent="316" name="feedback_text">
+      <Position>9</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <foreign-key id="339" parent="316" name="churns_ibfk_1">
+      <ColNames>account_id</ColNames>
+      <RefColNames>account_id</RefColNames>
+      <RefTableName>accounts</RefTableName>
+    </foreign-key>
+    <index id="340" parent="316" name="PRIMARY">
+      <ColNames>churn_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="341" parent="316" name="account_id">
+      <ColNames>account_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="342" parent="316" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="343" parent="317" name="subscription_id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="344" parent="317" name="account_id">
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="345" parent="317" name="start_date">
+      <Position>3</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="346" parent="317" name="end_date">
+      <Position>4</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="347" parent="317" name="plan_tier">
+      <Position>5</Position>
+      <StoredType>enum(&apos;Basic&apos;, &apos;Enterprise&apos;, &apos;Pro&apos;)|0e</StoredType>
+    </column>
+    <column id="348" parent="317" name="seats">
+      <Position>6</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="349" parent="317" name="mrr_amount">
+      <Position>7</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="350" parent="317" name="arr_amount">
+      <Position>8</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="351" parent="317" name="is_trial">
+      <Position>9</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="352" parent="317" name="upgraded">
+      <Position>10</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="353" parent="317" name="downgraded">
+      <Position>11</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="354" parent="317" name="churned">
+      <Position>12</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <column id="355" parent="317" name="billing_frequency">
+      <Position>13</Position>
+      <StoredType>enum(&apos;monthly&apos;, &apos;annual&apos;)|0e</StoredType>
+    </column>
+    <column id="356" parent="317" name="auto_renewed">
+      <Position>14</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
+    </column>
+    <foreign-key id="357" parent="317" name="subscriptions_ibfk_1">
+      <ColNames>account_id</ColNames>
+      <RefColNames>account_id</RefColNames>
+      <RefTableName>accounts</RefTableName>
+    </foreign-key>
+    <index id="358" parent="317" name="PRIMARY">
+      <ColNames>subscription_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="359" parent="317" name="account_id">
+      <ColNames>account_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="360" parent="317" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
