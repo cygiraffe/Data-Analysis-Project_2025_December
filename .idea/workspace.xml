@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="datagrip initial setup">
-      <change afterPath="$PROJECT_DIR$/.idea/Data_Analysis_Project_SaaS_Analysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/environment_setup.sql" afterDir="false" />
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/raw_data/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sql/metric_analysis_pt1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,8 +37,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/shr79/OneDrive/바탕 화면/25 DA 공부 종합/Projects/Data_Analysis_Project_SaaS_Analysis",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/shr79/OneDrive/바탕 화면/25 DA 공부 종합/Projects/Data_Analysis_Project_SaaS_Analysis/raw_data",
     "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
   },
   "keyToStringList": {
@@ -53,6 +49,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shr79\OneDrive\바탕 화면\25 DA 공부 종합\Projects\Data_Analysis_Project_SaaS_Analysis\raw_data" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="" />
@@ -76,7 +77,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="datagrip initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="datagrip initial setup" />
+    <MESSAGE value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
