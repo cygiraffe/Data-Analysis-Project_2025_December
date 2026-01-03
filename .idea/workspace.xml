@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry">
       <change afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_metric1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +77,8 @@
     <MESSAGE value="datagrip initial setup" />
     <MESSAGE value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
     <MESSAGE value="Analysis of MRR growth by industry and plan tier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Analysis of MRR growth by industry and plan tier" />
+    <MESSAGE value="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry" />
+    <option name="LAST_COMMIT_MESSAGE" value="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
