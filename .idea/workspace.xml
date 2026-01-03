@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/raw_data/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/metric_analysis_pt1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_metric1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/shr79/OneDrive/바탕 화면/25 DA 공부 종합/Projects/Data_Analysis_Project_SaaS_Analysis/raw_data",
-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shr79/OneDrive/바탕 화면/25 DA 공부 종합/Projects/Data_Analysis_Project_SaaS_Analysis/raw_data&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shr79\OneDrive\바탕 화면\25 DA 공부 종합\Projects\Data_Analysis_Project_SaaS_Analysis\raw_data" />
@@ -78,7 +80,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="datagrip initial setup" />
     <MESSAGE value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
+    <MESSAGE value="Analysis of MRR growth by industry and plan tier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analysis of MRR growth by industry and plan tier" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
