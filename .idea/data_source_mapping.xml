@@ -3,6 +3,7 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/sql/analysis_arpa.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/analysis_churn_rate.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
+    <file url="file://$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/analysis_mrr.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/environment_setup.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
   </component>
