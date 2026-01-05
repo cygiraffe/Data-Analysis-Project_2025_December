@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/sql/analysis_arpa.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/analysis_churn_rate.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/sql/analysis_grr.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/analysis_mrr.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/analysis_nrr.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/sql/environment_setup.sql" dialect="MySQL" />

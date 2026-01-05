@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/analysis_grr.sql" afterDir="false" />
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-addition of having clause in CTE tables">
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_grr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_grr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,8 @@
     <MESSAGE value="-mrr expansion rate analysis&#10;important logics" />
     <MESSAGE value="-net revenue retention analysis&#10;-important SQL techniques/logics used: &#10;1: cross join in making CTE tables and left join in the select statement.&#10;2: the where condition in cross joins to select only active subscriptions at each time point." />
     <MESSAGE value="-minor change: column name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="-minor change: column name change" />
+    <MESSAGE value="-addition of having clause in CTE tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="-addition of having clause in CTE tables" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
