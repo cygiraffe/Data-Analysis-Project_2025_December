@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-mrr expansion rate analysis&#10;important logics">
+      <change afterPath="$PROJECT_DIR$/sql/analysis_nrr.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
@@ -85,7 +84,8 @@
     <MESSAGE value="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry" />
     <MESSAGE value="-monthly ARPA analysis by industry and plan tier" />
     <MESSAGE value="-subscription churn rate analysis : churned subscriptions divided by active subscriptions in the month&#10;- Denominator: Subscriptions active at the beginning of the month&#10;- Numerator: Subscriptions from the denominator that churned during the month&#10;- Excludes: Subscriptions that both started and ended within the same month&#10;- Rationale: Focuses on retention of existing customer base" />
-    <option name="LAST_COMMIT_MESSAGE" value="-subscription churn rate analysis : churned subscriptions divided by active subscriptions in the month&#10;- Denominator: Subscriptions active at the beginning of the month&#10;- Numerator: Subscriptions from the denominator that churned during the month&#10;- Excludes: Subscriptions that both started and ended within the same month&#10;- Rationale: Focuses on retention of existing customer base" />
+    <MESSAGE value="-mrr expansion rate analysis&#10;important logics" />
+    <option name="LAST_COMMIT_MESSAGE" value="-mrr expansion rate analysis&#10;important logics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
