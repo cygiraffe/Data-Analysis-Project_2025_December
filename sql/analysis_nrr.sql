@@ -1,5 +1,6 @@
 use da_project_no1;
 select * from subscriptions;
+create or replace view vw_nrr as
 with recursive
     months as (select last_day('2024-01-01') as month_end
                union all

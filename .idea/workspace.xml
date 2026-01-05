@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-addition of having clause in CTE tables">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-grr analysis: stopped due to limitation in data accuracy">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_grr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_grr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_arpa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_nrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_nrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,8 @@
     <MESSAGE value="-net revenue retention analysis&#10;-important SQL techniques/logics used: &#10;1: cross join in making CTE tables and left join in the select statement.&#10;2: the where condition in cross joins to select only active subscriptions at each time point." />
     <MESSAGE value="-minor change: column name change" />
     <MESSAGE value="-addition of having clause in CTE tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="-addition of having clause in CTE tables" />
+    <MESSAGE value="-grr analysis: stopped due to limitation in data accuracy" />
+    <option name="LAST_COMMIT_MESSAGE" value="-grr analysis: stopped due to limitation in data accuracy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

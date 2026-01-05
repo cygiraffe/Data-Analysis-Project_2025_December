@@ -1159,62 +1159,62 @@ sys|schema||DA study||grant option|G</Grants>
     <schema id="290" parent="1" name="common_project">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="291" parent="1" name="da_project_no1">
+    <schema id="291" parent="1" name="easycode">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="292" parent="1" name="information_schema">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="293" parent="1" name="jesdb">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="294" parent="1" name="leetcode50">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="295" parent="1" name="mysql">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="296" parent="1" name="performance_schema">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="297" parent="1" name="pracforstudy">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="298" parent="1" name="practice">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="299" parent="1" name="sakila">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="300" parent="1" name="sales_analytics">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="301" parent="1" name="solve_nyang">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="302" parent="1" name="ssafit_db">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="303" parent="1" name="ssafy_car">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="304" parent="1" name="ssafy_movie">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="305" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="306" parent="1" name="test_user">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="307" parent="1" name="world">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="308" parent="1" name="da_project_no1">
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
       <LastIntrospectionLocalTimestamp>2026-01-05.01:29:52</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="292" parent="1" name="easycode">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="293" parent="1" name="information_schema">
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </schema>
-    <schema id="294" parent="1" name="jesdb">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="295" parent="1" name="leetcode50">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="296" parent="1" name="mysql">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="297" parent="1" name="performance_schema">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="298" parent="1" name="pracforstudy">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="299" parent="1" name="practice">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="300" parent="1" name="sakila">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="301" parent="1" name="sales_analytics">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="302" parent="1" name="solve_nyang">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="303" parent="1" name="ssafit_db">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="304" parent="1" name="ssafy_car">
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </schema>
-    <schema id="305" parent="1" name="ssafy_movie">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="306" parent="1" name="sys">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="307" parent="1" name="test_user">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="308" parent="1" name="world">
-      <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <user id="309" parent="1" name="DA study">
       <Plugin>mysql_native_password</Plugin>
@@ -1237,203 +1237,380 @@ sys|schema||DA study||grant option|G</Grants>
     <user id="314" parent="1" name="ssafy">
       <Host>localhost</Host>
     </user>
-    <table id="315" parent="291" name="accounts">
+    <table id="315" parent="308" name="accounts">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="316" parent="291" name="churns">
+    <table id="316" parent="308" name="churns">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="317" parent="291" name="subscriptions">
+    <table id="317" parent="308" name="subscriptions">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="318" parent="315" name="account_id">
+    <view id="318" parent="308" name="vw_arpa_by_industry">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>3652</SourceTextLength>
+    </view>
+    <view id="319" parent="308" name="vw_arpa_by_tier">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>2585</SourceTextLength>
+    </view>
+    <view id="320" parent="308" name="vw_expansion_mrr_rate">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>2931</SourceTextLength>
+    </view>
+    <view id="321" parent="308" name="vw_mrr_growth_by_industry">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>3933</SourceTextLength>
+    </view>
+    <view id="322" parent="308" name="vw_mrr_growth_by_tier">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>2919</SourceTextLength>
+    </view>
+    <view id="323" parent="308" name="vw_nrr">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>2083</SourceTextLength>
+    </view>
+    <view id="324" parent="308" name="vw_subscription_churn_rate">
+      <Definer>root@localhost</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <SourceTextLength>1536</SourceTextLength>
+    </view>
+    <column id="325" parent="315" name="account_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="319" parent="315" name="account_name">
+    <column id="326" parent="315" name="account_name">
       <Position>2</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="320" parent="315" name="industry">
+    <column id="327" parent="315" name="industry">
       <Position>3</Position>
       <StoredType>enum(&apos;Cybersecurity&apos;, &apos;DevTools&apos;, &apos;EdTech&apos;, &apos;FinTech&apos;, &apos;HealthTech&apos;)|0e</StoredType>
     </column>
-    <column id="321" parent="315" name="country">
+    <column id="328" parent="315" name="country">
       <Position>4</Position>
       <StoredType>varchar(10)|0s</StoredType>
     </column>
-    <column id="322" parent="315" name="signup_date">
+    <column id="329" parent="315" name="signup_date">
       <Position>5</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="323" parent="315" name="referral_source">
+    <column id="330" parent="315" name="referral_source">
       <Position>6</Position>
       <StoredType>enum(&apos;partner&apos;, &apos;ads&apos;, &apos;organic&apos;, &apos;event&apos;, &apos;other&apos;)|0e</StoredType>
     </column>
-    <column id="324" parent="315" name="plan_tier">
+    <column id="331" parent="315" name="plan_tier">
       <Position>7</Position>
       <StoredType>enum(&apos;Basic&apos;, &apos;Enterprise&apos;, &apos;Pro&apos;)|0e</StoredType>
     </column>
-    <column id="325" parent="315" name="seats">
+    <column id="332" parent="315" name="seats">
       <Position>8</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="326" parent="315" name="is_trial">
+    <column id="333" parent="315" name="is_trial">
       <Position>9</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="327" parent="315" name="churned">
+    <column id="334" parent="315" name="churned">
       <Position>10</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <index id="328" parent="315" name="PRIMARY">
+    <index id="335" parent="315" name="PRIMARY">
       <ColNames>account_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="329" parent="315" name="PRIMARY">
+    <key id="336" parent="315" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="330" parent="316" name="churn_id">
+    <column id="337" parent="316" name="churn_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="331" parent="316" name="account_id">
+    <column id="338" parent="316" name="account_id">
       <Position>2</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="332" parent="316" name="churn_date">
+    <column id="339" parent="316" name="churn_date">
       <Position>3</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="333" parent="316" name="reason">
+    <column id="340" parent="316" name="reason">
       <Position>4</Position>
       <StoredType>enum(&apos;pricing&apos;, &apos;support&apos;, &apos;budget&apos;, &apos;features&apos;, &apos;competitor&apos;, &apos;unknown&apos;)|0e</StoredType>
     </column>
-    <column id="334" parent="316" name="refund">
+    <column id="341" parent="316" name="refund">
       <Position>5</Position>
       <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
-    <column id="335" parent="316" name="preceding_upgrade">
+    <column id="342" parent="316" name="preceding_upgrade">
       <Position>6</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="336" parent="316" name="preceding_downgrade">
+    <column id="343" parent="316" name="preceding_downgrade">
       <Position>7</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="337" parent="316" name="reactivated">
+    <column id="344" parent="316" name="reactivated">
       <Position>8</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="338" parent="316" name="feedback_text">
+    <column id="345" parent="316" name="feedback_text">
       <Position>9</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <foreign-key id="339" parent="316" name="churns_ibfk_1">
+    <foreign-key id="346" parent="316" name="churns_ibfk_1">
       <ColNames>account_id</ColNames>
       <RefColNames>account_id</RefColNames>
       <RefTableName>accounts</RefTableName>
     </foreign-key>
-    <index id="340" parent="316" name="PRIMARY">
+    <index id="347" parent="316" name="PRIMARY">
       <ColNames>churn_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="341" parent="316" name="account_id">
+    <index id="348" parent="316" name="account_id">
       <ColNames>account_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="342" parent="316" name="PRIMARY">
+    <key id="349" parent="316" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="343" parent="317" name="subscription_id">
+    <column id="350" parent="317" name="subscription_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="344" parent="317" name="account_id">
+    <column id="351" parent="317" name="account_id">
       <Position>2</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="345" parent="317" name="start_date">
+    <column id="352" parent="317" name="start_date">
       <Position>3</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="346" parent="317" name="end_date">
+    <column id="353" parent="317" name="end_date">
       <Position>4</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="347" parent="317" name="plan_tier">
+    <column id="354" parent="317" name="plan_tier">
       <Position>5</Position>
       <StoredType>enum(&apos;Basic&apos;, &apos;Enterprise&apos;, &apos;Pro&apos;)|0e</StoredType>
     </column>
-    <column id="348" parent="317" name="seats">
+    <column id="355" parent="317" name="seats">
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="349" parent="317" name="mrr_amount">
+    <column id="356" parent="317" name="mrr_amount">
       <Position>7</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="350" parent="317" name="arr_amount">
+    <column id="357" parent="317" name="arr_amount">
       <Position>8</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="351" parent="317" name="is_trial">
+    <column id="358" parent="317" name="is_trial">
       <Position>9</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="352" parent="317" name="upgraded">
+    <column id="359" parent="317" name="upgraded">
       <Position>10</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="353" parent="317" name="downgraded">
+    <column id="360" parent="317" name="downgraded">
       <Position>11</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="354" parent="317" name="churned">
+    <column id="361" parent="317" name="churned">
       <Position>12</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="355" parent="317" name="billing_frequency">
+    <column id="362" parent="317" name="billing_frequency">
       <Position>13</Position>
       <StoredType>enum(&apos;monthly&apos;, &apos;annual&apos;)|0e</StoredType>
     </column>
-    <column id="356" parent="317" name="auto_renewed">
+    <column id="363" parent="317" name="auto_renewed">
       <Position>14</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <foreign-key id="357" parent="317" name="subscriptions_ibfk_1">
+    <foreign-key id="364" parent="317" name="subscriptions_ibfk_1">
       <ColNames>account_id</ColNames>
       <RefColNames>account_id</RefColNames>
       <RefTableName>accounts</RefTableName>
     </foreign-key>
-    <index id="358" parent="317" name="PRIMARY">
+    <index id="365" parent="317" name="PRIMARY">
       <ColNames>subscription_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="359" parent="317" name="account_id">
+    <index id="366" parent="317" name="account_id">
       <ColNames>account_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="360" parent="317" name="PRIMARY">
+    <key id="367" parent="317" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+    <column id="368" parent="318" name="month_end">
+      <Position>1</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="369" parent="318" name="industry">
+      <Position>2</Position>
+      <StoredType>varchar(13)|0s</StoredType>
+    </column>
+    <column id="370" parent="318" name="mrr_in_month">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="371" parent="318" name="number_of_accounts">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="372" parent="318" name="arpa">
+      <Position>5</Position>
+      <StoredType>decimal(35,2 digit)|0s</StoredType>
+    </column>
+    <column id="373" parent="319" name="month_end">
+      <Position>1</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="374" parent="319" name="plan_tier">
+      <Position>2</Position>
+      <StoredType>varchar(10)|0s</StoredType>
+    </column>
+    <column id="375" parent="319" name="mrr_in_month">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="376" parent="319" name="number_of_accounts">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="377" parent="319" name="arpa">
+      <Position>5</Position>
+      <StoredType>decimal(35,2 digit)|0s</StoredType>
+    </column>
+    <column id="378" parent="320" name="month">
+      <Position>1</Position>
+      <StoredType>varchar(7)|0s</StoredType>
+    </column>
+    <column id="379" parent="320" name="country">
+      <Position>2</Position>
+      <StoredType>varchar(10)|0s</StoredType>
+    </column>
+    <column id="380" parent="320" name="referral_source">
+      <Position>3</Position>
+      <StoredType>enum(&apos;partner&apos;, &apos;ads&apos;, &apos;organic&apos;, &apos;event&apos;, &apos;other&apos;)|0e</StoredType>
+    </column>
+    <column id="381" parent="320" name="starting_mrr">
+      <Position>4</Position>
+      <StoredType>decimal(54)|0s</StoredType>
+    </column>
+    <column id="382" parent="320" name="total_expansion_mrr">
+      <Position>5</Position>
+      <StoredType>decimal(55)|0s</StoredType>
+    </column>
+    <column id="383" parent="320" name="expansion_rate">
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="384" parent="321" name="month_end">
+      <Position>1</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="385" parent="321" name="industry">
+      <Position>2</Position>
+      <StoredType>varchar(13)|0s</StoredType>
+    </column>
+    <column id="386" parent="321" name="mrr_in_month">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="387" parent="321" name="prev_mrr_in_month">
+      <Position>4</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="388" parent="321" name="mrr_change_rate">
+      <Position>5</Position>
+      <StoredType>varchar(42)|0s</StoredType>
+    </column>
+    <column id="389" parent="322" name="month_end">
+      <Position>1</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="390" parent="322" name="plan_tier">
+      <Position>2</Position>
+      <StoredType>varchar(10)|0s</StoredType>
+    </column>
+    <column id="391" parent="322" name="mrr_in_month">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="392" parent="322" name="prev_mrr_in_month">
+      <Position>4</Position>
+      <StoredType>decimal(32)|0s</StoredType>
+    </column>
+    <column id="393" parent="322" name="mrr_change_rate">
+      <Position>5</Position>
+      <StoredType>varchar(42)|0s</StoredType>
+    </column>
+    <column id="394" parent="323" name="month_end">
+      <Position>1</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="395" parent="323" name="cohort_mrr_final">
+      <Position>2</Position>
+      <StoredType>decimal(54)|0s</StoredType>
+    </column>
+    <column id="396" parent="323" name="current_mrr_final">
+      <Position>3</Position>
+      <StoredType>decimal(54)|0s</StoredType>
+    </column>
+    <column id="397" parent="323" name="nrr_rate">
+      <Position>4</Position>
+      <StoredType>varchar(63)|0s</StoredType>
+    </column>
+    <column id="398" parent="324" name="month">
+      <Position>1</Position>
+      <StoredType>varchar(7)|0s</StoredType>
+    </column>
+    <column id="399" parent="324" name="subscriptions_at_month_start">
+      <Position>2</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="400" parent="324" name="churned_during_month">
+      <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="401" parent="324" name="subscription_churn_rate">
+      <Position>4</Position>
+      <StoredType>varchar(29)|0s</StoredType>
+    </column>
   </database-model>
 </dataSource>

@@ -2,6 +2,7 @@ use da_project_no1;
 select *
 from churns;
 # churn rate analysis
+create or replace view vw_subscription_churn_rate as
 WITH RECURSIVE
     months AS (SELECT DATE('2023-01-01') AS month_date
                UNION ALL
@@ -32,4 +33,4 @@ SELECT DATE_FORMAT(month_date, '%Y-%m')                          AS month,
 FROM monthly_metrics
 ORDER BY month_date;
 
-select * from subscriptions;
+#select * from subscriptions;

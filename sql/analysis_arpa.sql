@@ -2,6 +2,7 @@
 use da_project_no1;
 select * from subscriptions;
 #arpa by industry
+create or replace view vw_arpa_by_industry as
 with recursive
     months as (select last_day('2023-01-01') as month_end
                union all
@@ -60,6 +61,7 @@ from subscriptions;
 select *
 from accounts;
 # arpa by plan tier
+create or replace view vw_arpa_by_tier as
 with recursive
     months as (select last_day('2023-01-01') as month_end
                union all

@@ -9,6 +9,7 @@ from churns;
 select *
 from da_project_no1.subscriptions;
 #mrr growth by industry
+CREATE OR REPLACE VIEW vw_mrr_growth_by_industry AS
 with recursive
     months as (select last_day('2023-01-01') as month_end
                union all
@@ -69,6 +70,7 @@ from subscriptions;
 select *
 from accounts;
 # mrr growth by plan tier
+CREATE OR REPLACE VIEW vw_mrr_growth_by_tier AS
 with recursive
     months as (select last_day('2023-01-01') as month_end
                union all

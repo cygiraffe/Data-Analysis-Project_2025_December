@@ -6,6 +6,7 @@ use da_project_no1;
 select *
 from subscriptions;
 # recursive month table
+create or replace view vw_expansion_mrr_rate as
 with recursive
     months as (select last_day('2023-01-01') as month
                union all
