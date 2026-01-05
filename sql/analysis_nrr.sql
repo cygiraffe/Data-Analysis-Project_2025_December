@@ -12,6 +12,7 @@ mrr_past as (
     cross join subscriptions
     where start_date <= DATE_SUB(month_end, INTERVAL 12 MONTH) and (end_date is null or end_date >= DATE_SUB(month_end, INTERVAL 12 MONTH))
     group by 1,2
+    having sum(mrr_amount)>0
     ),
 mrr_current as (
     select month_end, account_id, sum(mrr_amount) as current_mrr
@@ -19,6 +20,7 @@ mrr_current as (
     cross join subscriptions
     where start_date <= month_end and (end_date is null or end_date >= month_end)
     group by 1,2
+    having sum(mrr_amount)>0
     )
 select mrr_past.month_end, sum(cohort_mrr) as cohort_mrr_final, sum(coalesce(current_mrr,0)) as current_mrr_final,
        case when
