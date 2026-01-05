@@ -20,7 +20,7 @@ mrr_current as (
     where start_date <= month_end and (end_date is null or end_date >= month_end)
     group by 1,2
     )
-select mrr_past.month_end, sum(cohort_mrr) as cohort_mrr, sum(coalesce(current_mrr,0)) as current_mrr,
+select mrr_past.month_end, sum(cohort_mrr) as cohort_mrr_final, sum(coalesce(current_mrr,0)) as current_mrr_final,
        case when
                 sum(coalesce(cohort_mrr,0)) !=0 then concat(round(sum(current_mrr)*100/sum(cohort_mrr),2),'%')
                 else null end as nrr_rate
