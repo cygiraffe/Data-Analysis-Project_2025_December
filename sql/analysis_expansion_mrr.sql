@@ -53,8 +53,8 @@ with recursive
                                  ELSE 0
                                  END                     AS expansion_mrr,
                              CASE
-                                 WHEN last_month_mrr > 0 AND this_month_mrr < last_month_mrr
-                                     THEN last_month_mrr - this_month_mrr
+                                 WHEN COALESCE(last_month_mrr, 0) > 0 AND this_month_mrr < COALESCE(last_month_mrr, 0)
+                                     THEN COALESCE(last_month_mrr, 0) - this_month_mrr
                                  ELSE 0
                                  END AS contraction_mrr
 
