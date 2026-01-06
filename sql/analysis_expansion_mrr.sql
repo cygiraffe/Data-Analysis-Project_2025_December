@@ -51,15 +51,22 @@ with recursive
                                      AND this_month_mrr > COALESCE(last_month_mrr, 0)
                                      THEN this_month_mrr - COALESCE(last_month_mrr, 0)
                                  ELSE 0
-                                 END                     AS expansion_mrr
+                                 END                     AS expansion_mrr,
+                             CASE
+                                 WHEN last_month_mrr > 0 AND this_month_mrr < last_month_mrr
+                                     THEN last_month_mrr - this_month_mrr
+                                 ELSE 0
+                                 END AS contraction_mrr
 
                       FROM with_lag)
-SELECT DATE_FORMAT(month, '%Y-%m') AS month,
+SELECT month,
        country,
        referral_source,
        SUM(prev_month_mrr)                                                                AS starting_mrr,
        SUM(expansion_mrr)                                                                 AS total_expansion_mrr,
-       CONCAT(ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS expansion_rate
+       sum(contraction_mrr)                                                               AS total_contraction_mrr,
+       CONCAT(ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS expansion_rate,
+       CONCAT(ROUND(SUM(contraction_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS contraction_rate
 FROM expansion_mrr
 WHERE prev_month_mrr > 0
    OR current_month_mrr > 0
