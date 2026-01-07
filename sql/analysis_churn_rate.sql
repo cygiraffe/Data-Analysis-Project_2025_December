@@ -28,7 +28,7 @@ WITH RECURSIVE
 SELECT DATE_FORMAT(month_date, '%Y-%m')                          AS month,
        subs_at_start                                             AS subscriptions_at_month_start,
        churned_subs                                              AS churned_during_month,
-       ROUND(churned_subs * 100.0 / NULLIF(subs_at_start, 0), 2) AS subscription_churn_rate
+       ROUND(churned_subs * 1.0 / NULLIF(subs_at_start, 0), 2) AS subscription_churn_rate
 FROM monthly_metrics
 ORDER BY month_date;
 

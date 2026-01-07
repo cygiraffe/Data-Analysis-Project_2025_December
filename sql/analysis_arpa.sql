@@ -102,7 +102,7 @@ union all
 select *,
        case
            when number_of_accounts > 0
-               then round(mrr_in_month / number_of_accounts, 2)
+               then round(mrr_in_month*1.0 / number_of_accounts, 2)
            else 0
            end as arpa
 from mrr_total

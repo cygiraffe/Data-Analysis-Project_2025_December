@@ -65,8 +65,8 @@ SELECT month,
        SUM(prev_month_mrr)                                                     AS starting_mrr,
        SUM(expansion_mrr)                                                      AS total_expansion_mrr,
        sum(contraction_mrr)                                                    AS total_contraction_mrr,
-       ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2)   AS expansion_rate,
-       ROUND(SUM(contraction_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2) AS contraction_rate
+       ROUND(SUM(expansion_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 2)   AS expansion_rate,
+       ROUND(SUM(contraction_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 2) AS contraction_rate
 FROM expansion_mrr_table
 WHERE prev_month_mrr > 0
    OR current_month_mrr > 0

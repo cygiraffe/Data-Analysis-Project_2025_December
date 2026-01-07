@@ -59,7 +59,7 @@ select month_end,
        mrr_in_month,
        lag(mrr_in_month) over (order by month_end)                   as prev_mrr_in_month,
        round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
-              lag(mrr_in_month) over (order by month_end)) * 100, 2) as mrr_change_rate
+              lag(mrr_in_month) over (order by month_end)) * 1.0, 2) as mrr_change_rate
 from mrr_total
 order by industry, month_end;
 
@@ -115,6 +115,6 @@ select month_end,
        mrr_in_month,
        lag(mrr_in_month) over (order by month_end)                   as prev_mrr_in_month,
        round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
-              lag(mrr_in_month) over (order by month_end)) * 100, 2) as mrr_change_rate
+              lag(mrr_in_month) over (order by month_end)) * 1.0, 2) as mrr_change_rate
 from mrr_total
 order by plan_tier, month_end;

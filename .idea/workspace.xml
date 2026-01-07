@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-consistency of coalesce function use in nrr_rate calculation">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_arpa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/analysis_nrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_nrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,8 @@
     <MESSAGE value="-minor change in variable name" />
     <MESSAGE value="-data boundary handling" />
     <MESSAGE value="-consistency of coalesce function use in nrr_rate calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="-consistency of coalesce function use in nrr_rate calculation" />
+    <MESSAGE value="-elimination of concat function when calculating percentage figures for easier data handling in Power BI environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="-elimination of concat function when calculating percentage figures for easier data handling in Power BI environment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
