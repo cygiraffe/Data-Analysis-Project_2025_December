@@ -25,7 +25,7 @@ mrr_current as (
     )
 select mrr_past.month_end, sum(coalesce(cohort_mrr,0)) as cohort_mrr_final, sum(coalesce(current_mrr,0)) as current_mrr_final,
        case when
-                sum(coalesce(cohort_mrr,0)) !=0 then round(sum(coalesce(current_mrr,0))*1.0/sum(coalesce(cohort_mrr,0)),2)
+                sum(coalesce(cohort_mrr,0)) !=0 then round(sum(coalesce(current_mrr,0))*1.0/sum(coalesce(cohort_mrr,0)),6)
                 end as nrr_rate
     from mrr_past
 left join mrr_current

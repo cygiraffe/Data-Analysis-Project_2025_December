@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-undid multipllication of 100.&#10;-applied ifnull functions to prevent N/A values in Power BI">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" afterDir="false" />
@@ -103,7 +103,9 @@
     <MESSAGE value="-data boundary handling" />
     <MESSAGE value="-consistency of coalesce function use in nrr_rate calculation" />
     <MESSAGE value="-elimination of concat function when calculating percentage figures for easier data handling in Power BI environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="-elimination of concat function when calculating percentage figures for easier data handling in Power BI environment" />
+    <MESSAGE value="-undid  the multiplication of 100 in calculation of ratios for easier data handling in Power BI environment" />
+    <MESSAGE value="-undid multipllication of 100.&#10;-applied ifnull functions to prevent N/A values in Power BI" />
+    <option name="LAST_COMMIT_MESSAGE" value="-undid multipllication of 100.&#10;-applied ifnull functions to prevent N/A values in Power BI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

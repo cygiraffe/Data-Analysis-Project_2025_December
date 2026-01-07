@@ -1260,22 +1260,22 @@ sys|schema||DA study||grant option|G</Grants>
     <view id="319" parent="308" name="vw_arpa_by_tier">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>2585</SourceTextLength>
+      <SourceTextLength>2593</SourceTextLength>
     </view>
     <view id="320" parent="308" name="vw_expansion_mrr_rate">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>3477</SourceTextLength>
+      <SourceTextLength>3473</SourceTextLength>
     </view>
     <view id="321" parent="308" name="vw_mrr_growth_by_industry">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>3909</SourceTextLength>
+      <SourceTextLength>3919</SourceTextLength>
     </view>
     <view id="322" parent="308" name="vw_mrr_growth_by_tier">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>2895</SourceTextLength>
+      <SourceTextLength>2905</SourceTextLength>
     </view>
     <view id="323" parent="308" name="vw_nrr">
       <Definer>root@localhost</Definer>
@@ -1285,7 +1285,7 @@ sys|schema||DA study||grant option|G</Grants>
     <view id="324" parent="308" name="vw_subscription_churn_rate">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>1524</SourceTextLength>
+      <SourceTextLength>1522</SourceTextLength>
     </view>
     <column id="325" parent="315" name="account_id">
       <NotNull>1</NotNull>
@@ -1490,7 +1490,7 @@ sys|schema||DA study||grant option|G</Grants>
     </column>
     <column id="372" parent="318" name="arpa">
       <Position>5</Position>
-      <StoredType>decimal(35,2 digit)|0s</StoredType>
+      <StoredType>decimal(36,4 digit)|0s</StoredType>
     </column>
     <column id="373" parent="319" name="month_end">
       <Position>1</Position>
@@ -1512,7 +1512,7 @@ sys|schema||DA study||grant option|G</Grants>
     </column>
     <column id="377" parent="319" name="arpa">
       <Position>5</Position>
-      <StoredType>decimal(35,2 digit)|0s</StoredType>
+      <StoredType>decimal(38,5 digit)|0s</StoredType>
     </column>
     <column id="378" parent="320" name="month">
       <Position>1</Position>
@@ -1540,11 +1540,11 @@ sys|schema||DA study||grant option|G</Grants>
     </column>
     <column id="384" parent="320" name="expansion_rate">
       <Position>7</Position>
-      <StoredType>decimal(61,2 digit)|0s</StoredType>
+      <StoredType>decimal(61,5 digit)|0s</StoredType>
     </column>
     <column id="385" parent="320" name="contraction_rate">
       <Position>8</Position>
-      <StoredType>decimal(61,2 digit)|0s</StoredType>
+      <StoredType>decimal(61,5 digit)|0s</StoredType>
     </column>
     <column id="386" parent="321" name="month_end">
       <Position>1</Position>
@@ -1560,12 +1560,13 @@ sys|schema||DA study||grant option|G</Grants>
       <StoredType>decimal(32)|0s</StoredType>
     </column>
     <column id="389" parent="321" name="prev_mrr_in_month">
+      <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>decimal(32)|0s</StoredType>
     </column>
     <column id="390" parent="321" name="mrr_change_rate">
       <Position>5</Position>
-      <StoredType>varchar(41)|0s</StoredType>
+      <StoredType>decimal(39,5 digit)|0s</StoredType>
     </column>
     <column id="391" parent="322" name="month_end">
       <Position>1</Position>
@@ -1581,12 +1582,13 @@ sys|schema||DA study||grant option|G</Grants>
       <StoredType>decimal(32)|0s</StoredType>
     </column>
     <column id="394" parent="322" name="prev_mrr_in_month">
+      <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>decimal(32)|0s</StoredType>
     </column>
     <column id="395" parent="322" name="mrr_change_rate">
       <Position>5</Position>
-      <StoredType>varchar(41)|0s</StoredType>
+      <StoredType>decimal(39,5 digit)|0s</StoredType>
     </column>
     <column id="396" parent="323" name="month_end">
       <Position>1</Position>
@@ -1602,7 +1604,7 @@ sys|schema||DA study||grant option|G</Grants>
     </column>
     <column id="399" parent="323" name="nrr_rate">
       <Position>4</Position>
-      <StoredType>decimal(60,2 digit)|0s</StoredType>
+      <StoredType>decimal(60,5 digit)|0s</StoredType>
     </column>
     <column id="400" parent="324" name="month">
       <Position>1</Position>
@@ -1618,7 +1620,7 @@ sys|schema||DA study||grant option|G</Grants>
     </column>
     <column id="403" parent="324" name="subscription_churn_rate">
       <Position>4</Position>
-      <StoredType>decimal(26,2 digit)|0s</StoredType>
+      <StoredType>decimal(26,5 digit)|0s</StoredType>
     </column>
   </database-model>
 </dataSource>
