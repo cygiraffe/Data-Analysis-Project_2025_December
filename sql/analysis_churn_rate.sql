@@ -10,13 +10,14 @@ WITH RECURSIVE
                FROM months
                WHERE month_date < '2024-12-01'),
     monthly_metrics AS (SELECT m.month_date,
+                               # subscriptions active at the start of the month
                                (SELECT COUNT(DISTINCT subscription_id)
                                 FROM subscriptions
                                 WHERE start_date < m.month_date
                                   AND (end_date IS NULL OR end_date >= m.month_date)
                                 and is_trial=0
                                 )      AS subs_at_start,
-
+                                # subscriptions churned during the month
                                (SELECT COUNT(DISTINCT subscription_id)
                                 FROM subscriptions
                                 WHERE start_date < m.month_date and
