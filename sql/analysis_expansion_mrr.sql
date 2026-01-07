@@ -16,7 +16,7 @@ with recursive
 #select * from months;
     accounts_simple as (select account_id, country, referral_source
                         from accounts),
-        months_accounts_combo AS (SELECT month, accounts_simple.*
+    months_accounts_combo AS (SELECT month, accounts_simple.*
                               FROM months
                                        CROSS JOIN accounts_simple),
     account_monthly_mrr AS (SELECT m.month,
@@ -39,7 +39,7 @@ with recursive
                         this_month_mrr,
                         LAG(this_month_mrr) OVER (PARTITION BY account_id ORDER BY month) AS last_month_mrr
                  FROM account_monthly_mrr),
-    expansion_mrr AS (SELECT month,
+    expansion_mrr_table AS (SELECT month,
                              account_id,
                              country,
                              referral_source,
@@ -56,19 +56,19 @@ with recursive
                                  WHEN COALESCE(last_month_mrr, 0) > 0 AND this_month_mrr < COALESCE(last_month_mrr, 0)
                                      THEN COALESCE(last_month_mrr, 0) - this_month_mrr
                                  ELSE 0
-                                 END AS contraction_mrr
-
+                                 END                     AS contraction_mrr
                       FROM with_lag)
 SELECT month,
        country,
        referral_source,
-       SUM(prev_month_mrr)                                                                AS starting_mrr,
-       SUM(expansion_mrr)                                                                 AS total_expansion_mrr,
-       sum(contraction_mrr)                                                               AS total_contraction_mrr,
-       CONCAT(ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS expansion_rate,
+       SUM(prev_month_mrr)                                                                  AS starting_mrr,
+       SUM(expansion_mrr)                                                                   AS total_expansion_mrr,
+       sum(contraction_mrr)                                                                 AS total_contraction_mrr,
+       CONCAT(ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%')   AS expansion_rate,
        CONCAT(ROUND(SUM(contraction_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS contraction_rate
-FROM expansion_mrr
+FROM expansion_mrr_table
 WHERE prev_month_mrr > 0
    OR current_month_mrr > 0
 GROUP BY month, country, referral_source
 ORDER BY month, country, referral_source;
+
