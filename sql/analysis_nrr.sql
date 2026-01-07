@@ -25,8 +25,8 @@ mrr_current as (
     )
 select mrr_past.month_end, sum(coalesce(cohort_mrr,0)) as cohort_mrr_final, sum(coalesce(current_mrr,0)) as current_mrr_final,
        case when
-                sum(coalesce(cohort_mrr,0)) !=0 then concat(round(sum(coalesce(current_mrr,0))*100/sum(coalesce(cohort_mrr,0)),2),'%')
-                else null end as nrr_rate
+                sum(coalesce(cohort_mrr,0)) !=0 then round(sum(coalesce(current_mrr,0))*100/sum(coalesce(cohort_mrr,0)),2)
+                end as nrr_rate
     from mrr_past
 left join mrr_current
 on mrr_past.month_end = mrr_current.month_end and mrr_past.account_id = mrr_current.account_id

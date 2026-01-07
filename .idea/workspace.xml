@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-grr analysis: stopped due to limitation in data accuracy">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-consistency of coalesce function use in nrr_rate calculation">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_arpa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/analysis_nrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_nrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,13 @@
     <MESSAGE value="-minor change: column name change" />
     <MESSAGE value="-addition of having clause in CTE tables" />
     <MESSAGE value="-grr analysis: stopped due to limitation in data accuracy" />
-    <option name="LAST_COMMIT_MESSAGE" value="-grr analysis: stopped due to limitation in data accuracy" />
+    <MESSAGE value="Create SQL views for 5 core SaaS metrics to integrate to Power BI&#10;&#10;- vw_mrr_growth: Monthly recurring revenue trend&#10;- vw_arpa: Average revenue per account&#10;- vw_subscription_churn_rate: Subscription churn rate analysis&#10;- vw_expansion_mrr_rate: analyzes revenue added from existing customers&#10;- vw_nrr: Net revenue retention analysis" />
+    <MESSAGE value="-fix in expansion mrr query:&#10;date format fix (in accordance with other queries. easier to deal with in Power BI environment&#10;&#10;- addition of mrr contraction rate" />
+    <MESSAGE value="- minor change: wrapped last_month_mrr column with coalesce function" />
+    <MESSAGE value="-minor change in variable name" />
+    <MESSAGE value="-data boundary handling" />
+    <MESSAGE value="-consistency of coalesce function use in nrr_rate calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="-consistency of coalesce function use in nrr_rate calculation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

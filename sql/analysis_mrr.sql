@@ -48,18 +48,18 @@ select month_end,
        case
            when lag(mrr_in_month) over (partition by industry order by month_end) = 0 then 'N/A'
            else
-               concat(round(((mrr_table.mrr_in_month -
-                              lag(mrr_in_month) over (partition by industry order by month_end)) /
-                             lag(mrr_in_month) over (partition by industry order by month_end)) * 100, 2),
-                      '%') end                                           as mrr_change_rate
+               round(((mrr_table.mrr_in_month -
+                       lag(mrr_in_month) over (partition by industry order by month_end)) /
+                      lag(mrr_in_month) over (partition by industry order by month_end)) * 100,
+                     2) end                                              as mrr_change_rate
 from mrr_table
 union all
 select month_end,
        industry,
        mrr_in_month,
-       lag(mrr_in_month) over (order by month_end)                                as prev_mrr_in_month,
-       concat(round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
-                     lag(mrr_in_month) over (order by month_end)) * 100, 2), '%') as mrr_change_rate
+       lag(mrr_in_month) over (order by month_end)                   as prev_mrr_in_month,
+       round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
+              lag(mrr_in_month) over (order by month_end)) * 100, 2) as mrr_change_rate
 from mrr_total
 order by industry, month_end;
 
@@ -104,17 +104,17 @@ select month_end,
        lag(mrr_in_month) over (partition by plan_tier order by month_end) as prev_mrr_in_month,
        case
            when lag(mrr_in_month) over (partition by plan_tier order by month_end) = 0 then 'N/A'
-           else concat(round(((mrr_table.mrr_in_month -
-                               lag(mrr_in_month) over (partition by plan_tier order by month_end)) /
-                              lag(mrr_in_month) over (partition by plan_tier order by month_end)) * 100, 2),
-                       '%') end                                           as mrr_change_rate
+           else round(((mrr_table.mrr_in_month -
+                        lag(mrr_in_month) over (partition by plan_tier order by month_end)) /
+                       lag(mrr_in_month) over (partition by plan_tier order by month_end)) * 100,
+                      2) end                                              as mrr_change_rate
 from mrr_table
 union all
 select month_end,
        plan_tier,
        mrr_in_month,
-       lag(mrr_in_month) over (order by month_end)                                as prev_mrr_in_month,
-       concat(round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
-                     lag(mrr_in_month) over (order by month_end)) * 100, 2), '%') as mrr_change_rate
+       lag(mrr_in_month) over (order by month_end)                   as prev_mrr_in_month,
+       round(((mrr_in_month - lag(mrr_in_month) over (order by month_end)) /
+              lag(mrr_in_month) over (order by month_end)) * 100, 2) as mrr_change_rate
 from mrr_total
 order by plan_tier, month_end;

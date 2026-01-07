@@ -40,32 +40,33 @@ with recursive
                         LAG(this_month_mrr) OVER (PARTITION BY account_id ORDER BY month) AS last_month_mrr
                  FROM account_monthly_mrr),
     expansion_mrr_table AS (SELECT month,
-                             account_id,
-                             country,
-                             referral_source,
-                             COALESCE(last_month_mrr, 0) AS prev_month_mrr,
-                             this_month_mrr              AS current_month_mrr,
+                                   account_id,
+                                   country,
+                                   referral_source,
+                                   COALESCE(last_month_mrr, 0) AS prev_month_mrr,
+                                   this_month_mrr              AS current_month_mrr,
 
-                             CASE
-                                 WHEN COALESCE(last_month_mrr, 0) > 0
-                                     AND this_month_mrr > COALESCE(last_month_mrr, 0)
-                                     THEN this_month_mrr - COALESCE(last_month_mrr, 0)
-                                 ELSE 0
-                                 END                     AS expansion_mrr,
-                             CASE
-                                 WHEN COALESCE(last_month_mrr, 0) > 0 AND this_month_mrr < COALESCE(last_month_mrr, 0)
-                                     THEN COALESCE(last_month_mrr, 0) - this_month_mrr
-                                 ELSE 0
-                                 END                     AS contraction_mrr
-                      FROM with_lag)
+                                   CASE
+                                       WHEN COALESCE(last_month_mrr, 0) > 0
+                                           AND this_month_mrr > COALESCE(last_month_mrr, 0)
+                                           THEN this_month_mrr - COALESCE(last_month_mrr, 0)
+                                       ELSE 0
+                                       END                     AS expansion_mrr,
+                                   CASE
+                                       WHEN COALESCE(last_month_mrr, 0) > 0 AND
+                                            this_month_mrr < COALESCE(last_month_mrr, 0)
+                                           THEN COALESCE(last_month_mrr, 0) - this_month_mrr
+                                       ELSE 0
+                                       END                     AS contraction_mrr
+                            FROM with_lag)
 SELECT month,
        country,
        referral_source,
-       SUM(prev_month_mrr)                                                                  AS starting_mrr,
-       SUM(expansion_mrr)                                                                   AS total_expansion_mrr,
-       sum(contraction_mrr)                                                                 AS total_contraction_mrr,
-       CONCAT(ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%')   AS expansion_rate,
-       CONCAT(ROUND(SUM(contraction_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2), '%') AS contraction_rate
+       SUM(prev_month_mrr)                                                     AS starting_mrr,
+       SUM(expansion_mrr)                                                      AS total_expansion_mrr,
+       sum(contraction_mrr)                                                    AS total_contraction_mrr,
+       ROUND(SUM(expansion_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2)   AS expansion_rate,
+       ROUND(SUM(contraction_mrr) * 100.0 / NULLIF(SUM(prev_month_mrr), 0), 2) AS contraction_rate
 FROM expansion_mrr_table
 WHERE prev_month_mrr > 0
    OR current_month_mrr > 0
