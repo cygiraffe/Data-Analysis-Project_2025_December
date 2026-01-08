@@ -54,23 +54,39 @@ with recursive
                                        END                     AS expansion_mrr,
                                    CASE
                                        WHEN COALESCE(last_month_mrr, 0) > 0 AND
-                                            this_month_mrr >0 and
+                                            this_month_mrr > 0 and
                                             this_month_mrr < COALESCE(last_month_mrr, 0)
                                            THEN COALESCE(last_month_mrr, 0) - this_month_mrr
                                        ELSE 0
                                        END                     AS contraction_mrr
-                            FROM with_lag)
-SELECT month,
-       country,
-       referral_source,
-       SUM(prev_month_mrr)                                                     AS starting_mrr,
-       SUM(expansion_mrr)                                                      AS total_expansion_mrr,
-       sum(contraction_mrr)                                                    AS total_contraction_mrr,
-       ROUND(SUM(expansion_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6)   AS expansion_rate,
-       ROUND(SUM(contraction_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6) AS contraction_rate
-FROM expansion_mrr_table
-WHERE prev_month_mrr > 0
-   OR current_month_mrr > 0
-GROUP BY month, country, referral_source
-ORDER BY month, country, referral_source;
-
+                            FROM with_lag),
+    by_segment as (SELECT month,
+                          country,
+                          referral_source,
+                          SUM(prev_month_mrr)                                                   AS starting_mrr,
+                          SUM(expansion_mrr)                                                    AS total_expansion_mrr,
+                          sum(contraction_mrr)                                                  AS total_contraction_mrr,
+                          ROUND(SUM(expansion_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6)   AS expansion_rate,
+                          ROUND(SUM(contraction_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6) AS contraction_rate,
+                          'segment'                                                             as agg_level
+                   FROM expansion_mrr_table
+                   WHERE prev_month_mrr > 0
+                      OR current_month_mrr > 0
+                   GROUP BY month, country, referral_source),
+    segment_total as (SELECT month,
+                             'total'                                                               as country,
+                             'total'                                                               as referral_source,
+                             SUM(prev_month_mrr)                                                   AS starting_mrr,
+                             SUM(expansion_mrr)                                                    AS total_expansion_mrr,
+                             sum(contraction_mrr)                                                  AS total_contraction_mrr,
+                             ROUND(SUM(expansion_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6)   AS expansion_rate,
+                             ROUND(SUM(contraction_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6) AS contraction_rate,
+                             'total'                                                               as agg_level
+                      FROM expansion_mrr_table
+                      WHERE prev_month_mrr > 0
+                         OR current_month_mrr > 0
+                      GROUP BY month)
+select * from by_segment
+union all
+select * from segment_total
+order by month, country, referral_source;

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-Increased decimal precision for percentage metrics">
+    <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="-opted out churned accounts in calcuation of contraction_mrr">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,8 @@
     <MESSAGE value="-undid  the multiplication of 100 in calculation of ratios for easier data handling in Power BI environment" />
     <MESSAGE value="-undid multipllication of 100.&#10;-applied ifnull functions to prevent N/A values in Power BI" />
     <MESSAGE value="-Increased decimal precision for percentage metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Increased decimal precision for percentage metrics" />
+    <MESSAGE value="-opted out churned accounts in calcuation of contraction_mrr" />
+    <option name="LAST_COMMIT_MESSAGE" value="-opted out churned accounts in calcuation of contraction_mrr" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
