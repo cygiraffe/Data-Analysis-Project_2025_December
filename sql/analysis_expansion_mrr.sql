@@ -54,6 +54,7 @@ with recursive
                                        END                     AS expansion_mrr,
                                    CASE
                                        WHEN COALESCE(last_month_mrr, 0) > 0 AND
+                                            this_month_mrr >0 and
                                             this_month_mrr < COALESCE(last_month_mrr, 0)
                                            THEN COALESCE(last_month_mrr, 0) - this_month_mrr
                                        ELSE 0
