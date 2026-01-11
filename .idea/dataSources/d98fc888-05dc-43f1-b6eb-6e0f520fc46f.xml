@@ -1265,7 +1265,7 @@ sys|schema||DA study||grant option|G</Grants>
     <view id="320" parent="308" name="vw_expansion_mrr_rate">
       <Definer>root@localhost</Definer>
       <DetailsLevel>3</DetailsLevel>
-      <SourceTextLength>5242</SourceTextLength>
+      <SourceTextLength>6562</SourceTextLength>
     </view>
     <view id="321" parent="308" name="vw_mrr_growth_by_industry">
       <Definer>root@localhost</Definer>
@@ -1549,7 +1549,7 @@ sys|schema||DA study||grant option|G</Grants>
     <column id="386" parent="320" name="agg_level">
       <NotNull>1</NotNull>
       <Position>9</Position>
-      <StoredType>varchar(7)|0s</StoredType>
+      <StoredType>varchar(10)|0s</StoredType>
     </column>
     <column id="387" parent="321" name="month_end">
       <Position>1</Position>

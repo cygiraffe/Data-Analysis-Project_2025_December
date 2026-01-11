@@ -85,8 +85,23 @@ with recursive
                       FROM expansion_mrr_table
                       WHERE prev_month_mrr > 0
                          OR current_month_mrr > 0
-                      GROUP BY month)
+                      GROUP BY month),
+    by_country as (SELECT month,
+                             country,
+                             'all'                                                               as referral_source,
+                             SUM(prev_month_mrr)                                                   AS starting_mrr,
+                             SUM(expansion_mrr)                                                    AS total_expansion_mrr,
+                             sum(contraction_mrr)                                                  AS total_contraction_mrr,
+                             ROUND(SUM(expansion_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6)   AS expansion_rate,
+                             ROUND(SUM(contraction_mrr) * 1.0 / NULLIF(SUM(prev_month_mrr), 0), 6) AS contraction_rate,
+                             'by_country'                                                               as agg_level
+                      FROM expansion_mrr_table
+                      WHERE prev_month_mrr > 0
+                         OR current_month_mrr > 0
+                      GROUP BY month, country)
 select * from by_segment
 union all
 select * from segment_total
+union all
+select * from by_country
 order by month, country, referral_source;
