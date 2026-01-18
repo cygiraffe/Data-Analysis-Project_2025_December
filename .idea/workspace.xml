@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/storage_v2/_src_/schema/da_project_no1.qIc0PQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Power_BI/Dashboard.pbix" beforeDir="false" afterPath="$PROJECT_DIR$/Power_BI/Dashboard.pbix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_arpa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/analysis_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="datagrip initial setup" />
     <MESSAGE value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
     <MESSAGE value="Analysis of MRR growth by industry and plan tier" />
     <MESSAGE value="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry" />
@@ -105,7 +106,9 @@
     <MESSAGE value="-opted out churned accounts in calcuation of contraction_mrr" />
     <MESSAGE value="-change in expansion_mrr query: added 'flag' column to use it to filter country and referral_source in power BI environment." />
     <MESSAGE value="-made and worked on power BI dashboard file." />
-    <option name="LAST_COMMIT_MESSAGE" value="-made and worked on power BI dashboard file." />
+    <MESSAGE value="-added CTE table in expansion_mrr sql file to express expansion mrr value by country in power BI. &#10;changed the corresponding power BI table accordingly" />
+    <MESSAGE value="added footnote to nrr query.&#10;&#10;removed coalesce function in the select statement,because it is not possible for cohort_mrr or current_mrr to be zero because of the having clauses in the CTE tables." />
+    <option name="LAST_COMMIT_MESSAGE" value="added footnote to nrr query.&#10;&#10;removed coalesce function in the select statement,because it is not possible for cohort_mrr or current_mrr to be zero because of the having clauses in the CTE tables." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
