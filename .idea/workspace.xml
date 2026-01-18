@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e567c1-b0cb-4001-bf8b-6cc694338896" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d98fc888-05dc-43f1-b6eb-6e0f520fc46f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Power_BI/Dashboard.pbix" beforeDir="false" afterPath="$PROJECT_DIR$/Power_BI/Dashboard.pbix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_arpa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_arpa.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_churn_rate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/analysis_mrr.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/analysis_mrr.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/shr79/OneDrive/바탕 화면/25 DA 공부 종합/Projects/Data_Analysis_Project_SaaS_Analysis/raw_data&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -83,7 +79,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-datagrip environment configuration&#10;-datasource conncetion into DataGrip from MySQL Workbench&#10;-database creation&#10;-creation of tables' structure&#10;-import of CSV files into the empty table structure." />
     <MESSAGE value="Analysis of MRR growth by industry and plan tier" />
     <MESSAGE value="-code formatting using datagrip built in shortcut&#10;-logic change to mrr analysis file: used cross join to make all months visible when grouped by month and industry" />
     <MESSAGE value="-monthly ARPA analysis by industry and plan tier" />
@@ -108,7 +103,8 @@
     <MESSAGE value="-made and worked on power BI dashboard file." />
     <MESSAGE value="-added CTE table in expansion_mrr sql file to express expansion mrr value by country in power BI. &#10;changed the corresponding power BI table accordingly" />
     <MESSAGE value="added footnote to nrr query.&#10;&#10;removed coalesce function in the select statement,because it is not possible for cohort_mrr or current_mrr to be zero because of the having clauses in the CTE tables." />
-    <option name="LAST_COMMIT_MESSAGE" value="added footnote to nrr query.&#10;&#10;removed coalesce function in the select statement,because it is not possible for cohort_mrr or current_mrr to be zero because of the having clauses in the CTE tables." />
+    <MESSAGE value="added comments to queries for easier understanding of the logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments to queries for easier understanding of the logic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
