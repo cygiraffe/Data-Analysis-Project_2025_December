@@ -13,7 +13,6 @@ Key Metric Definition:
   - One account can have multiple subscriptions (all MRR summed per account)
 */
 use da_project_no1;
-select * from subscriptions;
 #arpa by industry
 create or replace view vw_arpa_by_industry as
 with recursive

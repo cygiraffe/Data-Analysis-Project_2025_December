@@ -21,8 +21,6 @@ Data Limitation:
   impossible. This is a SIMPLIFIED churn rate as a result.
 */
 use da_project_no1;
-select *
-from churns;
 # churn rate analysis
 create or replace view vw_subscription_churn_rate as
 WITH RECURSIVE
@@ -58,4 +56,3 @@ SELECT DATE_FORMAT(month_date, '%Y-%m')                          AS month,
 FROM monthly_metrics
 ORDER BY month_date;
 
-#select * from subscriptions;

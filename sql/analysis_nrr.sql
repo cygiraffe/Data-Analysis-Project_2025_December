@@ -18,7 +18,6 @@ What NRR Captures Automatically:
   - New accounts: Excluded (only cohort accounts are tracked)
 */
 use da_project_no1;
-select * from subscriptions;
 create or replace view vw_nrr as
     # VIEW: Net Revenue Retention (12-Month Cohort)
 with recursive

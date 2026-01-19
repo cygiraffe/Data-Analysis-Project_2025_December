@@ -30,11 +30,6 @@ Classification Logic:
 */
 
 use da_project_no1;
-# select * from subscriptions;
-
-
-select *
-from subscriptions;
 # recursive month table
 create or replace view vw_expansion_mrr_rate as
 # Generate complete month series (Jan 2023 - Dec 2024) using month-end dates

@@ -13,15 +13,6 @@ Key Metric Definition:
   - Growth Rate: (Current MRR - Previous MRR) / Previous MRR
 */
 use da_project_no1;
-#select * from churns where reason='unknown';
-# select * from accounts;
-select *
-from subscriptions;
-# mrr, mrr growth calculation
-select *
-from churns;
-select *
-from da_project_no1.subscriptions;
 #mrr growth by industry
 CREATE OR REPLACE VIEW vw_mrr_growth_by_industry AS
 with recursive
@@ -84,10 +75,6 @@ order by industry, month_end;
 
 
 
-select *
-from subscriptions;
-select *
-from accounts;
 # mrr growth by plan tier
 CREATE OR REPLACE VIEW vw_mrr_growth_by_tier AS
 with recursive
