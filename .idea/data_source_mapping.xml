@@ -4,6 +4,10 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_1.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_2.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_3.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_4.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_5.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98fc888-05dc-43f1-b6eb-6e0f520fc46f/console_6.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/analysis_arpa.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/analysis_churn_rate.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
     <file url="file://$PROJECT_DIR$/sql/analysis_expansion_mrr.sql" value="d98fc888-05dc-43f1-b6eb-6e0f520fc46f" />
