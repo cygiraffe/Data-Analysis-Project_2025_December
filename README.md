@@ -45,7 +45,7 @@ proposed actionable recommendations.
 
 ![MRR_1.jpg](images/MRR_1.jpg)
 ![MRR_1_SQL.jpg](images/MRR_1_SQL.jpg)
-<br>Business insights
+<br> ⭐ Business insights
 
 - in 2024, the MRR growth rate remained steady throughout the year.
   Although the growth rate has declined between Jul and Aug 2024,
@@ -72,7 +72,7 @@ proposed actionable recommendations.
 ### 📊 *2. ARPA*
 
 ![ARPA_2.jpg](images/ARPA_2.jpg)
-<br>Business insights
+<br> ⭐ Business insights
 
 - HealthTech is underperforming while EdTech shows strong growth. Upselling initiatives should be prioritized for
   HealthTech accounts.
@@ -85,7 +85,7 @@ proposed actionable recommendations.
 
 ![Expansion_Contraction_3.jpg](images/Expansion_Contraction_3.jpg)
 ![Expansion_Contraction_3_SQL.jpg](images/Expansion_Contraction_3_SQL.jpg)
-<br>Business insights
+<br> ⭐ Business insights
 
 - Contraction MRR began increasing in Q4 2024, signaling growing customer dissatisfaction. Accounts with high
   contraction values require focused attention from
@@ -104,7 +104,7 @@ proposed actionable recommendations.
 ### 📊 *4. Retention (NRR & Churn Rate)*
 
 ![Retention_4.jpg](images/Retention_4.jpg)
-<br>Business insights
+<br> ⭐ Business insights
 
 - NRR showed a declining trend in early 2024 but has stabilized since August 2024.
 
